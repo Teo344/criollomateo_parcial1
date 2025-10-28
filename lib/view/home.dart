@@ -51,12 +51,13 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cálculo de N Elementos'),
+        backgroundColor: Colors.orangeAccent,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+          children: [
             InputCalcular(
               controller: _numeroctrl, 
               label: 'Número a agregar'
@@ -67,12 +68,11 @@ class _HomeState extends State<Home> {
               onPressed: _ingresarNumero,
               text: "Siguiente (Agregar)",
             ),
-            const Divider(height: 30),
+            const SizedBox(height: 15),
 
             Text(
               _mensajeEstado, 
               style: TextStyle(
-                color: _mensajeEstado.contains('Invalido') || _mensajeEstado.contains('No hay') ? Colors.red : Colors.blue,
                 fontWeight: FontWeight.bold
               ),
             ),
@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
               'Total de elementos agregados: ${_controller.numeros.length}',
               style: const TextStyle(fontSize: 16),
             ),
-            const Divider(height: 50),
+            const SizedBox(height: 15),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

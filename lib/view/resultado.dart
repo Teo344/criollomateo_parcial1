@@ -7,7 +7,7 @@ class ResultadoView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    final resultado = ModalRoute.of(context)!.settings.arguments as String; /* es de cir /resultado */
+    final resultado = ModalRoute.of(context)!.settings.arguments as String; 
 
     return Scaffold(
       appBar: AppBar(
