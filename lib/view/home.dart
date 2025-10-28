@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-// Asumo que tienes imports de tus widgets y controlador aquí
 import '../widgets/botones.dart';
 import '../widgets/input.dart';
 import '../controller/numeros_controller.dart'; 
-// Asumo que Botones está disponible y es flexible para el texto.
 
 class Home extends StatefulWidget {
   const Home({super.key});
